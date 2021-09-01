@@ -12,3 +12,12 @@ let metaData: any[] = [1, 'alphe', true, 'henry', 5.5]
 
 // Tuple
 let person: [number, string, boolean] = [23, 'matt', false]
+
+// Tuple Array
+let employee: [number, string][]
+
+employee = [
+    [1, 'Ali'],
+    [2, 'Ahmed'],
+    [3, 'Asim']
+]

@@ -10,3 +10,10 @@ let ids = [1, 2, 3, 4, 5];
 let metaData = [1, 'alphe', true, 'henry', 5.5];
 // Tuple
 let person = [23, 'matt', false];
+// Tuple Array
+let employee;
+employee = [
+    [1, 'Ali'],
+    [2, 'Ahmed'],
+    [3, 'Asim']
+];
