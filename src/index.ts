@@ -21,3 +21,41 @@ employee = [
     [2, 'Ahmed'],
     [3, 'Asim']
 ]
+
+// Union
+let pid: string | number = 22;
+pid = '22'
+
+// Enum
+enum Direction1 {
+    Up,
+    Down,
+    Left,
+    Right
+}
+
+enum Direction2 {
+    Up = 'Up',
+    Down = 'Down',
+    Left = 'Left',
+    Right = 'Right'
+}
+
+// Objects
+const user: {
+    id: number,
+    name: string
+} = {
+    id: 1,
+    name: 'Jojo'
+}
+
+type Person = {
+    id: number,
+    isMarried: boolean
+}
+
+const person1: Person = {
+    id: 2,
+    isMarried: false
+}
