@@ -53,11 +53,13 @@ const user: {
 type Person = {
     id: number,
     isMarried: boolean
+    fav: string
 }
 
 const person1: Person = {
     id: 2,
-    isMarried: false
+    isMarried: false,
+    fav: 'js'
 }
 
 // Type Assertion
