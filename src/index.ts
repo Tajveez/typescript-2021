@@ -67,3 +67,28 @@ let cid: any = 1
 // let customerId = <number>cid
 let customerId = cid as number
 // customerId = true
+
+// functions
+function addNum(x: number, y: number): number {
+    return x + y
+}
+
+console.log(addNum(2, 2))
+
+function log(message: string | number): void {
+    console.log(message)
+}
+log(addNum(2, 5))
+
+// Interfaces
+interface UserInterface {
+    readonly id: number,
+    name: string,
+    age?: number
+}
+
+const user1: UserInterface = {
+    id: 1,
+    name: 'JoJo'
+
+}
