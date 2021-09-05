@@ -131,3 +131,6 @@ class Employee extends Persona {
         this.position = position
     }
 }
+
+const emp = new Employee(3, 'Ali', 'developer');
+emp.register()
