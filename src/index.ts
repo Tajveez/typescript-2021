@@ -134,3 +134,11 @@ class Employee extends Persona {
 
 const emp = new Employee(3, 'Ali', 'developer');
 emp.register()
+
+// Generics
+function getArray<T>(items: T[]): T[] {
+    return new Array().concat(items)
+}
+
+let numArray = getArray<number>([1, 2, 3])
+let stringArray = getArray<string>(['1', '2', '3'])
