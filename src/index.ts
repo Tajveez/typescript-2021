@@ -99,3 +99,35 @@ interface MathFunc {
 
 const add: MathFunc = (x: number, y: number): number => x + y
 const sub: MathFunc = (x: number, y: number): number => x - y
+
+interface PersonaInterface {
+    id: number
+    name: string
+    register(): string
+}
+
+class Persona implements PersonaInterface {
+    public id: number;
+    public name: string
+
+    constructor(id: number, name: string) {
+        this.id = id
+        this.name = name
+    }
+
+    register() {
+        return `${this.name} is registered`;
+    }
+}
+
+const brad = new Persona(1, 'Brad')
+console.log(brad.register())
+
+class Employee extends Persona {
+    position: string
+
+    constructor(id: number, name: string, position: string) {
+        super(id, name)
+        this.position = position
+    }
+}
